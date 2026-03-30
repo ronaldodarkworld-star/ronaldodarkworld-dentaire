@@ -1,0 +1,10 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Renovação do Sorriso: Rosto sorrindo com brilho -->
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24 4C13 4 4 13 4 24C4 35 13 44 24 44C35 44 44 35 44 24C44 13 35 4 24 4ZM24 8C32.837 8 40 15.163 40 24C40 32.837 32.837 40 24 40C15.163 40 8 32.837 8 24C8 15.163 15.163 8 24 8Z" fill="#1E84B5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17 20C17 18.895 17.895 18 19 18C20.105 18 21 18.895 21 20C21 21.105 20.105 22 19 22C17.895 22 17 21.105 17 20ZM27 20C27 18.895 27.895 18 29 18C30.105 18 31 18.895 31 20C31 21.105 30.105 22 29 22C27.895 22 27 21.105 27 20Z" fill="#0E384C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 27C15 27 17 34 24 34C31 34 33 27 33 27H15Z" fill="#1E84B5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 27H33C33 27 33 29 30 29H18C15 29 15 27 15 27Z" fill="#0E384C"/>
+<!-- Brilho estrela -->
+<path d="M42 6L43.5 9.5L47 11L43.5 12.5L42 16L40.5 12.5L37 11L40.5 9.5L42 6Z" fill="#1E84B5"/>
+<path d="M6 2L7 4.5L9.5 5.5L7 6.5L6 9L5 6.5L2.5 5.5L5 4.5L6 2Z" fill="#1E84B5"/>
+</svg>

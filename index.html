@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Awaiken">
+    <title>Dentaire - Clínica Odontológica e Dentistas</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/slicknav.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="screen">
+	<link href="css/animate.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/mousecursor.css">
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+		</div>
+	</div>
+	<header class="main-header">
+		<div class="header-sticky">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="./">
+						<img src="images/logo.svg" alt="Logo">
+					</a>
+					<div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item submenu"><a class="nav-link" href="./">Início</a></li>                                
+                                <li class="nav-item"><a class="nav-link" href="about.html">Sobre Nós</a></li>
+                                <li class="nav-item"><a class="nav-link" href="service.html">Serviços</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
+                            </ul>
+                        </div>
+
+					</div>
+					<div class="navbar-toggle"></div>
+				</div>
+			</nav>
+			<div class="responsive-menu"></div>
+		</div>
+	</header>
+	<div class="hero hero-book-appointment">
+		<div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="section-title">
+                            <h1 class="text-anime-style-2" data-cursor="-opaque">Experimente a <span>Excelência Odontológica</span> com um Toque Suave</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">O objetivo da nossa clínica é fornecer uma odontologia amigável e cuidadosa, além do mais alto nível de tratamentos odontológicos gerais, estéticos e especializados para você e sua família.</p>
+                        </div>
+                        <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
+                            <a href="#" class="btn-default">marque uma consulta</a>
+                        </div>
+                        <div class="google-rating wow fadeInUp" data-wow-delay="0.75s">
+                            <ul>
+                               <li>Avaliação no Google <span>5.0</span></li>
+                               <li>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                                   <i class="fa-solid fa-star"></i>
+                               </li>
+                               <li>baseado em 492 avaliações</li>
+                            </ul>   
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="appointment-form">
+                        <div class="hero-appointment-form-title">
+                            <h2 class="text-anime-style-2"><span>Agendar</span> Consulta</h2>
+                            <p class="wow fadeInUp">Agende facilmente sua consulta preenchendo nosso formulário simples</p>
+                        </div>
+                        <form id="appointmentForm" action="https://formsubmit.co/ronaldoblackstone@outlook.com" method="POST">
+                            <div class="row">
+                                <div class="form-group col-md-12 mb-4">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Digite seu Nome" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <input type="email" name ="email" class="form-control" id="email" placeholder="Digite seu E-mail" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Número de Telefone" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group col-md-6 mb-4">
+                                    <select name="services" class="form-control form-select" id="services" required>
+                                        <option value="" disabled selected>selecione o serviço</option>
+											<option value="general_dental_care">cuidados odontológicos gerais</option>
+											<option value="dental_implants">implantes dentários</option>
+											<option value="cosmetic_dentistry">odontologia estética</option>
+											<option value="teeth_whitening">clareamento dental</option>
+											<option value="pediatric_dental_care">odontologia pediátrica</option>
+											<option value="advanced_oral_care">cuidados orais avançados</option>
+											<option value="comfort_dentistry">odontologia de conforto</option>
+											<option value="smile_renewal">renovação do sorriso</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group col-md-6 mb-5">
+                                    <input type="date" name="date" class="form-control" id="date" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <button type="submit" class="btn-default">agendar consulta</button>
+                                    <div id="msgSubmit" class="h3 hidden"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    <div class="cta-box">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="cta-box-item wow fadeInUp">
+                        <div class="icon-box">
+                            <img src="images/icon-cta-phone.svg" alt="">
+                        </div>
+                        <div class="cta-box-content">
+                            <h3>precisa de serviços odontológicos?</h3>
+                            <p>Ligue para: (11) 98782-8745</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="cta-box-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="icon-box">
+                            <img src="images/icon-cta-time.svg" alt="">
+                        </div>
+                        <div class="cta-box-content">
+                            <h3>horário de funcionamento</h3>
+                            <p>Seg a Sáb, das 9:00 às 21:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="cta-box-btn wow fadeInUp" data-wow-delay="0.5s">
+                        <a href="#" class="btn-default btn-highlighted">marque uma consulta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <div class="about-img-1">
+                            <figure class="image-anime reveal">
+                                <img src="images/about-us-img-1.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="about-img-2">
+                            <figure class="image-anime reveal">
+                                <img src="images/about-us-img-2.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="about-experience">
+                            <figure>
+                                <img src="images/about-experience-circle.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">sobre nós</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Sua Jornada</span> para um Sorriso Mais Saudável Começa Aqui</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">O objetivo da nossa clínica é fornecer uma odontologia amigável e cuidadosa e o mais alto nível de tratamentos odontológicos gerais, estéticos e especializados. Com práticas odontológicas em todo o mundo.</p>
+                        </div>
+                        <div class="about-us-body wow fadeInUp" data-wow-delay="0.5s">
+                            <ul>
+                                <li>equipe experiente</li>
+                                <li>serviços abrangentes</li>
+                                <li>tecnologia de ponta</li>
+                                <li>serviços de emergência</li>
+                            </ul>
+                        </div>
+                        <div class="about-us-footer wow fadeInUp" data-wow-delay="0.75s">
+                            <a href="#" class="btn-default">leia mais sobre nós</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="our-services">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">nossos serviços</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Alta Qualidade</span> em Serviços para Você.</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Estamos comprometidos com a sustentabilidade e iniciativas ecologicamente corretas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp">
+                        <div class="icon-box">
+                            <div class="img">
+                                <img src="images/icon-services-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="service-body">
+                            <h3>cuidados gerais</h3>
+                            <p>Estamos entusiasmados em conhecê-lo e fornecer o melhor atendimento para sua família.</p>
+                        </div>
+                        <div class="read-more-btn">
+                            <a href="#">leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="icon-box">
+                            <div class="img">
+                                <img src="images/icon-services-2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="service-body">
+                            <h3>implantes dentários</h3>
+                            <p>Estamos entusiasmados em conhecê-lo e fornecer o melhor atendimento para sua família.</p>
+                        </div>
+                        <div class="read-more-btn">
+                            <a href="#">leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="icon-box">
+                            <div class="img">
+                                <img src="images/icon-services-3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="service-body">
+                            <h3>odontologia estética</h3>
+                            <p>Estamos entusiasmados em conhecê-lo e fornecer o melhor atendimento para sua família.</p>
+                        </div>
+                        <div class="read-more-btn">
+                            <a href="#">leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="icon-box">
+                            <div class="img">
+                                <img src="images/icon-services-4.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="service-body">
+                            <h3>clareamento dental</h3>
+                            <p>Estamos entusiasmados em conhecê-lo e fornecer o melhor atendimento para sua família.</p>
+                        </div>
+                        <div class="read-more-btn">
+                            <a href="#">leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="services-box-footer wow fadeInUp" data-wow-delay="1s">
+                        <p>Acreditamos no uso das mais recentes tecnologias e técnicas para garantir os melhores resultados.</p>
+                        <a href="#" class="btn-default">ver todos os serviços</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-clinic-video">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="visit-clinic parallaxie">
+                            <div class="visit-clinic-content">
+                                <div class="section-title">
+                                    <h3 class="wow fadeInUp">visite a clínica</h3>
+                                    <h2 class="text-anime-style-2" data-cursor="-opaque">Atendimento Odontológico Completo Para Todas as Idades</h2>
+                                </div>
+                                <div class="visit-clinic-btn wow fadeInUp" data-wow-delay="0.25s" data-cursor-text="Play">
+                                    <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video play-btn">reproduzir vídeo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our-counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="counter-item">
+                            <div class="counter-title">
+                                <h2><span class="counter">75</span>+</h2>
+                                <h3>planos aceitos</h3>
+                            </div>
+                            <div class="counter-content">
+                                <p>Nossa equipe adora curiosidades. Você sabia que o esmalte dos dentes...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="counter-item">
+                            <div class="counter-title">
+                                <h2><span class="counter">02</span>K</h2>
+                                <h3>projetos realizados</h3>
+                            </div>
+                            <div class="counter-content">
+                                <p>Nossa equipe adora curiosidades. Você sabia que o esmalte dos dentes...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="counter-item">
+                            <div class="counter-title">
+                                <h2><span class="counter">22</span>K</h2>
+                                <h3>clientes felizes</h3>
+                            </div>
+                            <div class="counter-content">
+                                <p>Nossa equipe adora curiosidades. Você sabia que o esmalte dos dentes...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="counter-item">
+                            <div class="counter-title">
+                                <h2><span class="counter">18</span>+</h2>
+                                <h3>médicos experientes</h3>
+                            </div>
+                            <div class="counter-content">
+                                <p>Nossa equipe adora curiosidades. Você sabia que o esmalte dos dentes...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icon-star-image">
+            <img src="images/icon-star.svg" alt="">
+        </div>
+    </div>
+    <div class="why-choose-us">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">por que nos escolher</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Diagnóstico de</span> Doenças Dentárias</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Estamos comprometidos com a sustentabilidade e iniciativas ecologicamente corretas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 order-1">
+                    <div class="why-choose-box-1">
+                        <div class="why-choose-item wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="images/icon-why-us-1.svg" alt="">
+                            </div>  
+                            <div class="why-choose-content">
+                                <h3>médicos experientes</h3>
+                                <p>O objetivo de nossa clínica é fornecer assistência odontológica amigável e atenciosa.</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="icon-box">
+                                <img src="images/icon-why-us-2.svg" alt="">
+                            </div>  
+                            <div class="why-choose-content">
+                                <h3>cuidado personalizado</h3>
+                                <p>O objetivo de nossa clínica é fornecer assistência odontológica amigável e atenciosa.</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="icon-box">
+                                <img src="images/icon-why-us-3.svg" alt="">
+                            </div>  
+                            <div class="why-choose-content">
+                                <h3>opções flexíveis de pagamento</h3>
+                                <p>O objetivo de nossa clínica é fornecer assistência odontológica amigável e atenciosa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 order-lg-1 order-md-2 order-1">
+                    <div class="why-choose-image wow fadeInUp">
+                        <figure>
+                            <img src="images/why-choose-us-img.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 order-lg-2 order-md-1 order-2">
+                    <div class="why-choose-box-2">
+                        <div class="why-choose-item wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="images/icon-why-us-4.svg" alt="">
+                            </div>  
+                            <div class="why-choose-content">
+                                <h3>serviços de emergência</h3>
+                                <p>O objetivo de nossa clínica é fornecer assistência odontológica amigável e atenciosa.</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
+                            <div class="icon-box">
+                                <img src="images/icon-why-us-5.svg" alt="">
+                            </div>  
+                            <div class="why-choose-content">
+                                <h3>avaliações positivas</h3>
+                                <p>O objetivo de nossa clínica é fornecer assistência odontológica amigável e atenciosa.</p>
+                            </div>
+                        </div>
+                        <div class="why-choose-item wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="icon-box">
+                                <img src="images/icon-why-us-6.svg" alt="">
+                            </div>  
+                            <div class="why-choose-content">
+                                <h3>última tecnologia</h3>
+                                <p>O objetivo de nossa clínica é fornecer assistência odontológica amigável e atenciosa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icon-star-image">
+            <img src="images/icon-star.svg" alt="">
+        </div>
+    </div>
+    <div class="how-it-work">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="how-it-work-img">
+                        <figure class="reveal image-anime">
+                            <img src="images/how-it-work-img.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="how-it-work-content">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">como funciona</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque"><span>O Que Fazemos</span> Pelos Seus Dentes</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">Estamos comprometidos com a sustentabilidade. Nossa clínica pratica iniciativas ecológicas, como prontuários digitais, para reduzir o desperdício.</p>
+                        </div>
+                        <div class="faq-accordion how-work-accordion" id="accordion">
+                            <div class="accordion-item wow fadeInUp">
+                                <div class="icon-box">
+                                    <img src="images/icon-how-it-work-1.svg" alt="">
+                                </div>
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        agende uma consulta
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                                    data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>O objetivo de nossa clínica é fornecer assistência odontológica de alto nível para a saúde de nossos pacientes em todas as áreas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.25s">
+                                <div class="icon-box">
+                                    <img src="images/icon-how-it-work-2.svg" alt="">
+                                </div>
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        Como a terapia pode ajudar?
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                                    data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>O objetivo de nossa clínica é fornecer assistência odontológica de alto nível para a saúde de nossos pacientes em todas as áreas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="icon-box">
+                                    <img src="images/icon-how-it-work-3.svg" alt="">
+                                </div>
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        cuidado especializado
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                    data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>O objetivo de nossa clínica é fornecer assistência odontológica de alto nível para a saúde de nossos pacientes em todas as áreas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="our-team">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">nossa equipe</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Nossa Amigável</span> Equipe de Dentistas</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Estamos comprometidos com a sustentabilidade e iniciativas ecologicamente corretas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member-item wow fadeInUp">
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-1.jpg" alt="">
+                            </figure>
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>dr. johan joe</h3>
+                            <p>dentista principal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-2.jpg" alt="">
+                            </figure>
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>dr. mike johnson</h3>
+                            <p>dentista sênior</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-3.jpg" alt="">
+                            </figure>
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>dr. alison banson</h3>
+                            <p>ortodontista</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member-item wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="team-image">
+                            <figure class="image-anime">
+                                <img src="images/team-4.jpg" alt="">
+                            </figure>
+                            <div class="team-social-icon">
+                                <ul>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3>dr. christopher case</h3>
+                            <p>periodontista</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icon-star-image">
+            <img src="images/icon-star.svg" alt="">
+        </div>
+    </div>
+    <div class="our-testimonials">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">depoimentos</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque"><span>O Que Nossos</span> Clientes Dizem</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Estamos comprometidos com a sustentabilidade e iniciativas ecologicamente corretas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="testimonial-image">
+                        <div class="testimonial-img">
+                            <figure class="reveal image-anime">
+                                <img src="images/testimonials-img.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="testimonial-rating-box">
+                            <div class="rating-counter-item">
+                                <div class="rating-counter-number">
+                                    <h3><span class="counter">4.7</span>/5</h3>
+                                </div>
+                                <div class="rating-counter-content">
+                                    <p>Essa nota é dada pelo usuário após visitar nossa clínica</p>
+                                </div>
+                            </div>
+                            <div class="service-rating">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </li>
+                                    <li>por serviços de excelência</li>
+                                 </ul>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-lg-7">
+					<div class="testimonial-slider">
+						<div class="swiper">
+							<div class="swiper-wrapper" data-cursor-text="Drag">
+								<div class="swiper-slide">
+									<div class="testimonial-item">	
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-quote-image">
+                                                <img src="images/icon-testimonial-quote.svg" alt="">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>"Quero dizer obrigado ao meu médico Steve! Um serviço muito atencioso e responsável. Obrigado por me ajudar a superar meu medo de dentista!"</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="images/author-1.jpg" alt="">
+                                                </figure>
+                                            </div>            
+                                            <div class="author-content">
+                                                <h3>robert lee</h3>
+                                                <p>engenheiro de software</p>
+                                            </div>
+                                        </div>													
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="testimonial-item">	
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-quote-image">
+                                                <img src="images/icon-testimonial-quote.svg" alt="">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>"A melhor experiência odontológica que já tive! A equipe foi profissional e amigável, e os resultados foram incríveis. Recomendo fortemente!"</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="images/author-2.jpg" alt="">
+                                                </figure>
+                                            </div>            
+                                            <div class="author-content">
+                                                <h3>banson doe</h3>
+                                                <p>professor</p>
+                                            </div>
+                                        </div>													
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="testimonial-item">	
+                                        <div class="testimonial-header">
+                                            <div class="testimonial-quote-image">
+                                                <img src="images/icon-testimonial-quote.svg" alt="">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <p>"Excelente serviço e cuidado. A equipe é super qualificada e sempre disposta a tirar dúvidas. Eu não iria a nenhum outro lugar para cuidar dos dentes."</p>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-body">
+                                            <div class="author-image">
+                                                <figure class="image-anime">
+                                                    <img src="images/author-3.jpg" alt="">
+                                                </figure>
+                                            </div>            
+                                            <div class="author-content">
+                                                <h3>thomas linda</h3>
+                                                <p>designer</p>
+                                            </div>
+                                        </div>													
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-btn">
+                                <div class="testimonial-button-prev"></div>
+				                <div class="testimonial-button-next"></div>
+                            </div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="our-blog">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                     <div class="section-title">
+                        <h3 class="wow fadeInUp">blogs</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Confira Nossos</span> Últimos Artigos</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">Estamos comprometidos com a sustentabilidade e iniciativas ecologicamente corretas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item wow fadeInUp">
+                        <div class="post-featured-image" data-cursor-text="View">
+                            <figure>
+                                <a href="#" class="image-anime">
+                                    <img src="images/post-1.jpg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="post-item-body">
+                            <h2><a href="#">A Importância de Consultas Odontológicas Regulares</a></h2>
+                            <p>Nossa sala de espera apresenta uma variedade de plantas que ajudam a purificar o ar.</p>
+                        </div>
+                        <div class="post-item-footer">
+                            <a href="#" class="read-more-btn">leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="post-featured-image" data-cursor-text="View">
+                            <figure>
+                                <a href="#" class="image-anime">
+                                    <img src="images/post-2.jpg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="post-item-body">
+                            <h2><a href="#">Os 5 Principais Benefícios do Clareamento Dental</a></h2>
+                            <p>Acreditamos na promoção da saúde e bem-estar em todos os aspectos da nossa clínica.</p>
+                        </div>
+                        <div class="post-item-footer">
+                            <a href="#" class="read-more-btn">leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="post-featured-image" data-cursor-text="View">
+                            <figure>
+                                <a href="#" class="image-anime">
+                                    <img src="images/post-3.jpg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="post-item-body">
+                            <h2><a href="#">Entendendo Implantes Dentários: O Que Você Precisa Saber</a></h2>
+                            <p>Nossa clínica doa serviços de atendimento odontológico a famílias carentes.</p>
+                        </div>
+                        <div class="post-item-footer">
+                            <a href="#" class="read-more-btn">leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icon-star-image">
+            <img src="images/icon-star.svg" alt="">
+        </div>
+     </div>
+     <div class="contact-now">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="contact-google-map">
+                        <div class="google-map-iframe">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20York%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1703158537552!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-now-content">
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">contate agora</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Obtenha uma</span> Consulta Profissional Gratuita</h2>
+                        </div>
+                        <div class="contact-now-info">
+                            <div class="contact-info-list wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="icon-box">
+                                    <img src="images/icon-location.svg" alt="">
+                                </div>
+                                <div class="contact-info-content">
+                                    <p>24/11 Robert Road , Nova York , EUA</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-list wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="icon-box">
+                                    <img src="images/icon-phone.svg" alt="">
+                                </div>
+                                <div class="contact-info-content">
+                                    <p>+55 (11) 98782-8745</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-list wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="icon-box">
+                                    <img src="images/icon-mail.svg" alt="">
+                                </div>
+                                <div class="contact-info-content">
+                                    <p>contato@dominio.com.br</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-list wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="icon-box">
+                                    <img src="images/icon-clock.svg" alt="">
+                                </div>
+                                <div class="contact-info-content">
+                                    <p>Seg a Sáb, das 9:00 às 21:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-appointment-btn wow fadeInUp" data-wow-delay="1s">
+                            <a href="#" class="btn-default">marque uma consulta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="about-footer">
+                        <div class="footer-logo">
+                            <img src="images/footer-logo.svg" alt="">
+                        </div>
+                        <div class="about-footer-content">
+                            <p>O objetivo de nossa clínica é fornecer assistência odontológica amigável e atenciosa e o mais alto nível de tratamentos em geral.</p>
+                         </div>
+                     </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-links footer-quick-links">
+                        <h3>links rápidos</h3>
+                        <ul>                            
+                            <li><a href="#">início</a></li>
+                            <li><a href="#">sobre nós</a></li>
+                            <li><a href="#">serviços</a></li>
+                            <li><a href="#">agendar consulta</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-links footer-social-links">
+                        <h3>redes sociais</h3>
+                        <ul>                            
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">instagram</a></li>
+                            <li><a href="#">youtube</a></li>
+                            <li><a href="#">twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-links footer-contact-links">
+                        <h3>contato</h3>
+                        <ul>                            
+                            <li><a href="#">contato@dominio.com.br</a></li>
+                            <li><a href="#">+55 (11) 98782-8745</a></li>
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-copyright-text">
+                            <p>Copyright © 2024 Todos os Direitos Reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/function.js"></script>
+<script src="js/chatbot.js"></script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/554198563503" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>
